@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,26 +8,91 @@
     <title>Try Material Design for Blog</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <div>
-        <h1><a href="">Sandbox Blog</a></h1>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-        Button
-        </button>
+<div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout-icon"></div>
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout__title">Fantasy App</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link mdl-navigation__link--active" href="#">Результаты</a>
+                <a class="mdl-navigation__link" href="#">Таблица</a>
+                <a class="mdl-navigation__link" href="#">Календарь</a>
+                <a class="mdl-navigation__link" href="#">Травмы</a>
+                <a class="mdl-navigation__link" href="#">Поддержать</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout__title">Fantasy App</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#">Результаты</a>
+            <a class="mdl-navigation__link" href="#">Таблица</a>
+            <a class="mdl-navigation__link" href="#">Календарь</a>
+            <a class="mdl-navigation__link" href="#">Травмы</a>
+            <a class="mdl-navigation__link" href="#">Поддержать</a>
+        </nav>
     </div>
-
-    <div>
-        <p>published: 14.06.2014, 12:14</p>
-        <h2><a href="">My first post</a></h2>
-        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-    </div>
-
-    <div>
-        <p>published: 14.06.2014, 12:14</p>
-        <h2><a href="">My second post</a></h2>
-        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-    </div>
+    <main class="mdl-layout__content">
+        <div class="mdl-grid demo-content">
+            <div class="mdl-cell mdl-card mdl-shadow--4dp mdl-cell--4-col">
+                <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
+                alt="" style="padding:10px;">
+                </div>
+                <div class="mdl-card__supporting-text">
+                Auckland Sky Tower, taken March 24th, 2014
+                </div>
+                <div class="mdl-card__supporting-text">
+                The Sky Tower is an observation and telecommunications tower located in Auckland,
+                New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
+                in the Southern Hemisphere.
+                </div>
+            </div>
+            <div class="mdl-cell mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
+                alt="" style="padding:10px;">
+                </div>
+                <div class="mdl-card__supporting-text">
+                Auckland Sky Tower, taken March 24th, 2014
+                </div>
+                <div class="mdl-card__supporting-text">
+                The Sky Tower is an observation and telecommunications tower located in Auckland,
+                New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
+                in the Southern Hemisphere.
+                </div>
+            </div>
+            <div class="mdl-cell mdl-card mdl-shadow--4dp mdl-cell--4-col">
+                <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
+                alt="" style="padding:10px;">
+                </div>
+                <div class="mdl-card__supporting-text">
+                Auckland Sky Tower, taken March 24th, 2014
+                </div>
+                <div class="mdl-card__supporting-text">
+                The Sky Tower is an observation and telecommunications tower located in Auckland,
+                New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
+                in the Southern Hemisphere.
+                </div>
+            </div>
+            <div class="mdl-cell mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
+                alt="" style="padding:10px;">
+                </div>
+                <div class="mdl-card__supporting-text">
+                Auckland Sky Tower, taken March 24th, 2014
+                </div>
+                <div class="mdl-card__supporting-text">
+                The Sky Tower is an observation and telecommunications tower located in Auckland,
+                New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
+                in the Southern Hemisphere.
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </body>
 </html>
