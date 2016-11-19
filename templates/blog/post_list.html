@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Try Material Design for Blog</title>
+    <title>FantasyCast</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-<div class="mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header mdl-layout__header--waterfall">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
         <div class="mdl-layout-icon"></div>
         <div class="mdl-layout__header-row">
-            <span class="mdl-layout__title">Fantasy App</span>
+            <span class="mdl-layout-title">FantasyCast</span>
             <div class="mdl-layout-spacer"></div>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link mdl-navigation__link--active" href="#">Результаты</a>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="#">Результаты</a>
                 <a class="mdl-navigation__link" href="#">Таблица</a>
                 <a class="mdl-navigation__link" href="#">Календарь</a>
                 <a class="mdl-navigation__link" href="#">Травмы</a>
@@ -27,7 +27,7 @@
         </div>
     </header>
     <div class="mdl-layout__drawer">
-        <span class="mdl-layout__title">Fantasy App</span>
+        <span class="mdl-layout-title">FantasyCast</span>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="#">Результаты</a>
             <a class="mdl-navigation__link" href="#">Таблица</a>
@@ -38,7 +38,42 @@
     </div>
     <main class="mdl-layout__content">
         <div class="mdl-grid demo-content">
-            <div class="mdl-cell mdl-card mdl-shadow--4dp mdl-cell--4-col">
+            <div class="mdl-cell mdl-card mdl-shadow--3dp mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+                <div>
+                    <div class="team_info">
+                        <div><img class="team_logo" src="//ru.global.nba.com/media/img/teams/logos/TOR_logo.svg"></div>
+                        <div class="team_name">Raptors</div>
+                    </div>
+                    <div class="game_info">
+                        <div class="team_score score_win">103</div>
+                        <div class="game_status">Финал</div>
+                        <div class="team_score">101</div>
+                    </div>
+                    <div class="team_info">
+                        <div><img class="team_logo" src="//ru.global.nba.com/media/img/teams/logos/MIN_logo.svg"></div>
+                        <div class="team_name">Wolves</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-shadow--3dp mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+                <div>
+                    <div class="team_info">
+                        <div><img class="team_logo" src="//ru.global.nba.com/media/img/teams/logos/WAS_logo.svg"></div>
+                        <div class="team_name">Wizards</div>
+                    </div>
+                    <div class="game_info">
+                        <div class="team_score">82</div>
+                        <div class="game_status">Финал</div>
+                        <div class="team_score score_win">120</div>
+                    </div>
+                    <div class="team_info">
+                        <div><img class="team_logo" src="//ru.global.nba.com/media/img/teams/logos/MIL_logo.svg"></div>
+                        <div class="team_name">Bucks</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-card mdl-shadow--3dp mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
                 <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
                 alt="" style="padding:10px;">
                 </div>
@@ -51,33 +86,7 @@
                 in the Southern Hemisphere.
                 </div>
             </div>
-            <div class="mdl-cell mdl-card mdl-shadow--4dp">
-                <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
-                alt="" style="padding:10px;">
-                </div>
-                <div class="mdl-card__supporting-text">
-                Auckland Sky Tower, taken March 24th, 2014
-                </div>
-                <div class="mdl-card__supporting-text">
-                The Sky Tower is an observation and telecommunications tower located in Auckland,
-                New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
-                in the Southern Hemisphere.
-                </div>
-            </div>
-            <div class="mdl-cell mdl-card mdl-shadow--4dp mdl-cell--4-col">
-                <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
-                alt="" style="padding:10px;">
-                </div>
-                <div class="mdl-card__supporting-text">
-                Auckland Sky Tower, taken March 24th, 2014
-                </div>
-                <div class="mdl-card__supporting-text">
-                The Sky Tower is an observation and telecommunications tower located in Auckland,
-                New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
-                in the Southern Hemisphere.
-                </div>
-            </div>
-            <div class="mdl-cell mdl-card mdl-shadow--4dp">
+            <div class="mdl-cell mdl-card mdl-shadow--3dp mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
                 <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
                 alt="" style="padding:10px;">
                 </div>
