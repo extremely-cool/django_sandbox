@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FantasyCast</title>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
@@ -13,13 +14,13 @@
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header role="banner" class="mdl-layout__header">
-        <div class="mdl-layout-icon"></div>
+    <header class="mdl-layout__header">
+
         <div class="mdl-layout__header-row">
             <span class="mdl-layout-title">FantasyCast</span>
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link fc-navigation_link" href="#">Результаты</a>
+                <a class="mdl-navigation__link fc-navigation_link fc-navigation-active" href="#">Результаты</a>
                 <a class="mdl-navigation__link fc-navigation_link" href="#">Таблица</a>
                 <a class="mdl-navigation__link fc-navigation_link" href="#">Календарь</a>
                 <a class="mdl-navigation__link fc-navigation_link" href="#">Травмы</a>
@@ -38,7 +39,7 @@
         </nav>
     </div>
     <main class="mdl-layout__content fc-layout">
-        <div class="mdl-grid demo-content">
+        <div class="mdl-grid fc-content">
             <div class="mdl-cell mdl-card mdl-shadow--3dp mdl-cell--4-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
                 <div>
                     <div class="team-info">
@@ -178,7 +179,7 @@
 
                                 </td>
                                 <td>
-                                    <div class="player-points player-points-green">5</div>
+                                    <div class="player-points player-points-amber">5</div>
                                 </td>
                                 <td class="mdl-data-table__cell--non-numeric" width="40%">
                                   <div class="player-avatar">
@@ -190,7 +191,7 @@
                                   </div>
                                 </td>
                                 <td>
-                                    <div class="player-points player-points-star">7</div>
+                                    <div class="player-points player-points-amber">7</div>
                                 </td>
                             </tr>
                             <tr>
@@ -240,6 +241,169 @@
                         <div class="team-name">Bucks</div>
                     </div>
                 </div>
+                <table class="mdl-data-table mdl-js-data-table players-table" width="100%">
+                        <tbody>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203482.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Wilson</div>
+                                      <div>Chandler</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-star">25</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203481.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Trevor</div>
+                                      <div>Ariza</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-green">25</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203476.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Danilo</div>
+                                      <div>Gallinari</div>
+                                  </div>
+
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-green">25</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203475.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Ryan</div>
+                                      <div>Anderson</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-star">25</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203473.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Kenneth</div>
+                                      <div>Faried</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-green">25</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203477.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Sam</div>
+                                      <div>Dekker</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-green">25</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203482.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Will</div>
+                                      <div>Barton</div>
+                                  </div>
+
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-star">14</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203481.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Clint</div>
+                                      <div>Capela</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-green">15</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203476.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Darrel</div>
+                                      <div>Arthur</div>
+                                  </div>
+
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-amber">5</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203475.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Eric</div>
+                                      <div>Gordon</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-amber">7</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203473.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Wesley</div>
+                                      <div>Matthews</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-red">-2</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203477.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Wesley2</div>
+                                      <div>Matthews2</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-red">-10</div>
+                                </td>
+                            </tr>
+                          </tbody>
+                    </table>
             </div>
             <div class="mdl-cell mdl-card mdl-shadow--3dp mdl-cell--4-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
                 <div>
@@ -260,6 +424,169 @@
                         <div class="team-name">Suns</div>
                     </div>
                 </div>
+                <table class="mdl-data-table mdl-js-data-table players-table" width="100%">
+                        <tbody>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203482.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Wilson</div>
+                                      <div>Chandler</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-star">25</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203481.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Trevor</div>
+                                      <div>Ariza</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-green">25</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203476.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Danilo</div>
+                                      <div>Gallinari</div>
+                                  </div>
+
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-green">25</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203475.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Ryan</div>
+                                      <div>Anderson</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-star">25</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203473.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Kenneth</div>
+                                      <div>Faried</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-green">25</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203477.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Sam</div>
+                                      <div>Dekker</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-green">25</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203482.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Will</div>
+                                      <div>Barton</div>
+                                  </div>
+
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-star">14</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203481.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Clint</div>
+                                      <div>Capela</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-green">15</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203476.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Darrel</div>
+                                      <div>Arthur</div>
+                                  </div>
+
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-amber">5</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203475.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Eric</div>
+                                      <div>Gordon</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-amber">7</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203473.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Wesley</div>
+                                      <div>Matthews</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-red">-2</div>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric" width="40%">
+                                  <div class="player-avatar">
+                                      <div style="background-image: url(https://neulionmdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/203477.png);"></div>
+                                  </div>
+                                  <div class="player-name">
+                                      <div>Wesley2</div>
+                                      <div>Matthews2</div>
+                                  </div>
+                                </td>
+                                <td>
+                                    <div class="player-points player-points-red">-10</div>
+                                </td>
+                            </tr>
+                          </tbody>
+                    </table>
             </div>
             <div class="mdl-cell mdl-card mdl-shadow--3dp mdl-cell--4-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
                 <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
@@ -303,6 +630,6 @@
         </div>
     </main>
 </div>
-<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
 </body>
 </html>

@@ -1,11 +1,19 @@
 .fc-layout {
-    #background-color: #FAFAFA;
     background-color: #E2E1E0;
 }
 
 .fc-navigation_link {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 16px;
+}
+
+.mdl-navigation__link:hover {
+    background-color: #5c6bc0;
+    text-decoration: none
+}
+
+.fc-navigation-active {
+    background-color: #303f9f;
 }
 
 .team-info {
@@ -44,9 +52,9 @@
     height: 60px;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    color: darkgrey;
+    color: #9e9e9e;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .game-status-final {
@@ -102,11 +110,15 @@
 }
 
 .player-points-green {
-    color: #48c248;
+    color: #4caf50;
 }
 
 .player-points-red {
     color: #f44336;
+}
+
+.player-points-amber {
+    color: #ffa000;
 }
 
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
@@ -130,7 +142,7 @@
 
 
 
-.demo-content {
+.fc-content {
   max-width: 1600px;
 }
 
