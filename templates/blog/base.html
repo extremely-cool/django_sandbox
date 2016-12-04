@@ -1,0 +1,50 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FantasyCast</title>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">FantasyCast</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link fc-navigation_link fc-navigation-active" href="#">Результаты</a>
+                <a class="mdl-navigation__link fc-navigation_link" href="#">Таблица</a>
+                <a class="mdl-navigation__link fc-navigation_link" href="#">Календарь</a>
+                <a class="mdl-navigation__link fc-navigation_link" href="#">Травмы</a>
+                <a class="mdl-navigation__link fc-navigation_link" href="#">Поддержать</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">FantasyCast</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#">Результаты</a>
+            <a class="mdl-navigation__link" href="#">Таблица</a>
+            <a class="mdl-navigation__link" href="#">Календарь</a>
+            <a class="mdl-navigation__link" href="#">Травмы</a>
+            <a class="mdl-navigation__link" href="#">Поддержать</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content fc-layout">
+        <div class="mdl-grid fc-content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
