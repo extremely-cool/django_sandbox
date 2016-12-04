@@ -12,7 +12,7 @@
     text-decoration: none
 }
 
-.fc-navigation-active {
+.fc-navigation-active, .fc-navigation-active:hover{
     background-color: #303f9f;
 }
 
@@ -136,10 +136,6 @@
   z-index: -2;
 }
 /* END iOS Safari specific workaround */
-
-
-
-
 
 
 .fc-content {

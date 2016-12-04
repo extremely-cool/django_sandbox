@@ -13,38 +13,51 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header fc-layout">
     <header class="mdl-layout__header">
-
         <div class="mdl-layout__header-row">
             <span class="mdl-layout-title">FantasyCast</span>
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link fc-navigation_link fc-navigation-active" href="#">Результаты</a>
-                <a class="mdl-navigation__link fc-navigation_link" href="#">Таблица</a>
-                <a class="mdl-navigation__link fc-navigation_link" href="#">Календарь</a>
-                <a class="mdl-navigation__link fc-navigation_link" href="#">Травмы</a>
-                <a class="mdl-navigation__link fc-navigation_link" href="#">Поддержать</a>
+                <a class="mdl-navigation__link fc-navigation_link
+                    {% if request.resolver_match.url_name == "scoreboard" %}fc-navigation-active{% endif %}"
+                   href="{% url "scoreboard" %}">Результаты
+                </a>
+                <a class="mdl-navigation__link fc-navigation_link
+                   {% if request.resolver_match.url_name == "standings" %}fc-navigation-active{% endif %}"
+                   href="{% url "standings" %}">Таблица
+                </a>
+                <a class="mdl-navigation__link fc-navigation_link
+                   {% if request.resolver_match.url_name == "schedule" %}fc-navigation-active{% endif %}"
+                   href="{% url "schedule" %}">Календарь
+                </a>
+                <a class="mdl-navigation__link fc-navigation_link
+                   {% if request.resolver_match.url_name == "injuries" %}fc-navigation-active{% endif %}"
+                   href="{% url "injuries" %}">Травмы
+                </a>
+                <a class="mdl-navigation__link fc-navigation_link
+                   {% if request.resolver_match.url_name == "support" %}fc-navigation-active{% endif %}"
+                   href="{% url "support" %}">Поддержать
+                </a>
             </nav>
         </div>
     </header>
     <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">FantasyCast</span>
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="#">Результаты</a>
+            <a class="mdl-navigation__link" href="/scoreboard">Результаты</a>
             <a class="mdl-navigation__link" href="#">Таблица</a>
             <a class="mdl-navigation__link" href="#">Календарь</a>
-            <a class="mdl-navigation__link" href="#">Травмы</a>
+            <a class="mdl-navigation__link" href="/injuries">Травмы</a>
             <a class="mdl-navigation__link" href="#">Поддержать</a>
         </nav>
     </div>
-    <main class="mdl-layout__content fc-layout">
+    <main class="mdl-layout__content">
         <div class="mdl-grid fc-content">
             {% block content %}
             {% endblock %}
         </div>
     </main>
 </div>
-
 </body>
 </html>
