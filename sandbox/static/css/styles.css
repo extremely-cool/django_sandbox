@@ -1,5 +1,6 @@
-.fc-layout {
+body,html {
     background-color: #E2E1E0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 .fc-navigation_link {
@@ -42,19 +43,31 @@
     display: inline-block;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
-    #width: 35%;
+    width: 25%;
+}
+
+.home-team-score {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.visitor-team-score {
+    text-align: right;
+    padding-right: 15px;
+}
+
+.score-win {
+    color: #f44336;
 }
 
 .game-status {
     font-size: 14px;
     display: inline-block;
-    width: 30%;
     height: 60px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    color: #9e9e9e;
+    color: #9E9E9E;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 
 .game-status-final {
@@ -66,13 +79,30 @@
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
-.score-win {
-    color: #f44336;
+
+
+.home-players {
+    border-left: 1px;
+    border-right: 0px;
+    border-left-style: solid;
+    border-left-color: #e0e0e0;
+    width: 50%;
+    float: left;
 }
 
-.players-table {
+.visitor-players {
     border-left: 0px;
     border-right: 0px;
+    border-right-style: solid;
+    border-right-color: #e0e0e0;
+    width: 50%;
+    float: left;
+}
+
+.players-score{
+    width: 100%;
+    display: block;
+    float: left;
 }
 
 .player-avatar div {

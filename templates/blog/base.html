@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" background-color=#E2E1E0>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header fc-layout">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <span class="mdl-layout-title">FantasyCast</span>
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-layout--large-screen-only">
                 <a class="mdl-navigation__link fc-navigation_link
-                    {% if request.resolver_match.url_name == "scoreboard" %}fc-navigation-active{% endif %}"
+                   {% if request.resolver_match.url_name == "scoreboard" %}fc-navigation-active{% endif %}"
                    href="{% url "scoreboard" %}">Результаты
                 </a>
                 <a class="mdl-navigation__link fc-navigation_link
@@ -46,10 +46,10 @@
         <span class="mdl-layout-title">FantasyCast</span>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="/scoreboard">Результаты</a>
-            <a class="mdl-navigation__link" href="#">Таблица</a>
-            <a class="mdl-navigation__link" href="#">Календарь</a>
+            <a class="mdl-navigation__link" href="/standings">Таблица</a>
+            <a class="mdl-navigation__link" href="/schedule">Календарь</a>
             <a class="mdl-navigation__link" href="/injuries">Травмы</a>
-            <a class="mdl-navigation__link" href="#">Поддержать</a>
+            <a class="mdl-navigation__link" href="/support">Поддержать</a>
         </nav>
     </div>
     <main class="mdl-layout__content">
