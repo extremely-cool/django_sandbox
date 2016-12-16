@@ -1,4 +1,4 @@
-body,html {
+body, html {
     background-color: #E2E1E0;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
@@ -10,11 +10,16 @@ body,html {
 
 .mdl-navigation__link:hover {
     background-color: #5c6bc0;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .fc-navigation-active, .fc-navigation-active:hover{
     background-color: #303f9f;
+}
+
+.fc-content {
+    max-width: 1600px;
+    #justify-content: center;
 }
 
 .team-info {
@@ -79,8 +84,6 @@ body,html {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
-
-
 .home-players {
     border-left: 1px;
     border-right: 0px;
@@ -99,7 +102,11 @@ body,html {
     float: left;
 }
 
-.players-score{
+.player-table-info {
+    width: 80%;
+}
+
+.player-score {
     width: 100%;
     display: block;
     float: left;
@@ -123,19 +130,17 @@ body,html {
     font-size: 15px;
 }
 
-
-.player-stats-left {
-    border-right: 1px solid rgba(0,0,0,.12);
-}
-
 .player-points {
-    align: right;
     font-family: "Roboto","Helvetica","Arial", sans-serif;
     font-weight: 500;
     font-size: 18px;
 }
 
 .player-points-star {
+    color: #2196F3;
+}
+
+.player-points-indigo {
     color: #3f51b5;
 }
 
@@ -149,6 +154,20 @@ body,html {
 
 .player-points-amber {
     color: #ffa000;
+}
+
+.player-stats-tooltip div {
+    float: left;
+}
+
+.player-stats-tooltip_stat {
+    width: 80%;
+    text-align: left;
+}
+
+.player-stats-tooltip_value {
+    width: 20%;
+    text-align: right;
 }
 
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
@@ -168,9 +187,7 @@ body,html {
 /* END iOS Safari specific workaround */
 
 
-.fc-content {
-  max-width: 1600px;
-}
+
 
 .demo-charts {
   -webkit-align-items: center;
