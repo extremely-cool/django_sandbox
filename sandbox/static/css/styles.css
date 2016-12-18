@@ -84,26 +84,46 @@ body, html {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
-.home-players {
-    border-left: 1px;
-    border-right: 0px;
-    border-left-style: solid;
-    border-left-color: #e0e0e0;
-    width: 50%;
-    float: left;
+.players-table {
+    width: 100%;
+    border-left-style: none;
+    border-right-style: none;
 }
 
-.visitor-players {
-    border-left: 0px;
-    border-right: 0px;
-    border-right-style: solid;
-    border-right-color: #e0e0e0;
-    width: 50%;
-    float: left;
+.players-table_row:hover {
+    background-color: transparent!important;
 }
 
-.player-table-info {
+.players-table_cell {
+    width: 50%;
+    padding-left: 24px!important;
+    padding-right: 24px!important;
+}
+
+.players-table_cell:hover {
+    background-color: #eee;
+    transition-duration: .28s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-property: background-color;
+}
+
+.players-table_cell--no-data:hover {
+    background-color: transparent;
+}
+
+.players-table_cell--visitor {
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0!important;
+}
+
+.players-table_cell--home {
+    border-left: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0!important;
+}
+
+.player-info{
     width: 80%;
+    float: left;
 }
 
 .player-score {
@@ -134,6 +154,12 @@ body, html {
     font-family: "Roboto","Helvetica","Arial", sans-serif;
     font-weight: 500;
     font-size: 18px;
+    width: 20%;
+    display: table-cell;
+    height: 40px;
+    vertical-align: middle;
+    text-align: right;
+    float: none;
 }
 
 .player-points-star {

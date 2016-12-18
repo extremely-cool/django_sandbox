@@ -20,178 +20,105 @@
         </div>
     </div>
     <div>
-        <table class="mdl-data-table mdl-js-data-table visitor-players">
+        <table class="mdl-data-table mdl-js-data-table players-table">
             <tbody>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203482.png);"></div>
+                <tr class="players-table_row">
+                    <td id="p1" class="mdl-data-table__cell--non-numeric players-table_cell players-table_cell--visitor">
+                        <div class="player-info">
+                            <div class="player-avatar">
+                                <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203482.png);"></div>
+                            </div>
+                            <div class="player-name">
+                                <div>Wilson</div>
+                                <div>Chandler</div>
+                            </div>
                         </div>
-                        <div class="player-name">
-                            <div>Wilson</div>
-                            <div>Chandler</div>
-                        </div>
-                    </td>
-                    <td>
                         <div class="player-points player-points-indigo">25</div>
                     </td>
-                </tr>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203476.png);"></div>
+                    <div for="p1" class="mdl-tooltip mdl-tooltip--large player-stats-tooltip">
+                        <div>
+                            <div class="player-stats-tooltip_stat">Очки</div>
+                            <div class="player-stats-tooltip_value">25</div>
                         </div>
-                        <div class="player-name">
-                            <div>Danilo</div>
-                            <div>Gallinari</div>
+                        <div>
+                            <div class="player-stats-tooltip_stat">Подборы</div>
+                            <div class="player-stats-tooltip_value">8</div>
                         </div>
-                    </td>
-                    <td>
+                        <div>
+                            <div class="player-stats-tooltip_stat">Передачи</div>
+                            <div class="player-stats-tooltip_value">2</div>
+                        </div>
+                        <div>
+                            <div class="player-stats-tooltip_stat">Перехваты</div>
+                            <div class="player-stats-tooltip_value">2</div>
+                        </div>
+                        <div>
+                            <div class="player-stats-tooltip_stat">Блок-шоты</div>
+                            <div class="player-stats-tooltip_value">0</div>
+                        </div>
+                        <div>
+                            <div class="player-stats-tooltip_stat">Игровое время</div>
+                            <div class="player-stats-tooltip_value">20:37</div>
+                        </div>
+                        <hr />
+                        <div>
+                            <div class="player-stats-tooltip_stat">Потери</div>
+                            <div class="player-stats-tooltip_value">4</div>
+                        </div>
+                        <div>
+                            <div class="player-stats-tooltip_stat">Фолы</div>
+                            <div class="player-stats-tooltip_value">3</div>
+                        </div>
+                        <div>
+                            <div class="player-stats-tooltip_stat">2-очковые</div>
+                            <div class="player-stats-tooltip_value">10 из 12</div>
+                        </div>
+                        <div>
+                            <div class="player-stats-tooltip_stat">3-очковые</div>
+                            <div class="player-stats-tooltip_value">1 из 3</div>
+                        </div>
+                        <div>
+                            <div class="player-stats-tooltip_stat">Штрафные</div>
+                            <div class="player-stats-tooltip_value">3 из 4</div>
+                        </div>
+                    </div>
+                    <td class="mdl-data-table__cell--non-numeric players-table_cell players-table_cell--home">
+                        <div class="player-info">
+                            <div class="player-avatar">
+                                <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203481.png);"></div>
+                            </div>
+                            <div class="player-name">
+                                <div>Trevor</div>
+                                <div>Ariza</div>
+                            </div>
+                        </div>
                         <div class="player-points player-points-green">25</div>
                     </td>
                 </tr>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203473.png);"></div>
+                <tr class="players-table_row">
+                    <td class="mdl-data-table__cell--non-numeric players-table_cell players-table_cell--visitor">
+                        <div class="player-info">
+                            <div class="player-avatar">
+                                <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203476.png);"></div>
+                            </div>
+                            <div class="player-name">
+                                <div>Danilo</div>
+                                <div>Gallinari</div>
+                            </div>
                         </div>
-                        <div class="player-name">
-                            <div>Kenneth</div>
-                            <div>Faried</div>
-                        </div>
-                    </td>
-                    <td>
                         <div class="player-points player-points-green">25</div>
                     </td>
-                </tr>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203482.png);"></div>
+                    <td class="mdl-data-table__cell--non-numeric players-table_cell players-table_cell--home">
+                        <div class="player-info">
+                            <div class="player-avatar">
+                                <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203475.png);"></div>
+                            </div>
+                            <div class="player-name">
+                                <div>Ryan</div>
+                                <div>Anderson</div>
+                            </div>
                         </div>
-                        <div class="player-name">
-                            <div>Will</div>
-                            <div>Barton</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="player-points player-points-indigo">14</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203476.png);"></div>
-                        </div>
-                        <div class="player-name">
-                            <div>Darrel</div>
-                            <div>Arthur</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="player-points player-points-amber">5</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203473.png);"></div>
-                        </div>
-                        <div class="player-name">
-                            <div>Wesley</div>
-                            <div>Matthews</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="player-points player-points-red">-2</div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="mdl-data-table mdl-js-data-table home-players">
-            <tbody>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203481.png);"></div>
-                        </div>
-                        <div class="player-name">
-                            <div>Trevor</div>
-                            <div>Ariza</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="player-points player-points-green">25</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203475.png);"></div>
-                        </div>
-                        <div class="player-name">
-                            <div>Ryan</div>
-                            <div>Anderson</div>
-                        </div>
-                    </td>
-                    <td>
                         <div class="player-points player-points-indigo">25</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203477.png);"></div>
-                        </div>
-                        <div class="player-name">
-                            <div>Sam</div>
-                            <div>Dekker</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="player-points player-points-green">25</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203481.png);"></div>
-                        </div>
-                        <div class="player-name">
-                            <div>Clint</div>
-                            <div>Capela</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="player-points player-points-green">15</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203475.png);"></div>
-                        </div>
-                        <div class="player-name">
-                            <div>Eric</div>
-                            <div>Gordon</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="player-points player-points-amber">7</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                            <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203477.png);"></div>
-                        </div>
-                        <div class="player-name">
-                            <div>Wesley2</div>
-                            <div>Matthews2</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="player-points player-points-red">-10</div>
                     </td>
                 </tr>
             </tbody>
@@ -220,7 +147,7 @@
         <table class="mdl-data-table mdl-js-data-table visitor-players">
             <tbody>
                 <tr id="tt1">
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203482.png);"></div>
                         </div>
@@ -281,7 +208,7 @@
                     </div>
                 </div>
                 <tr id="tt2">
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203476.png);"></div>
                         </div>
@@ -342,7 +269,7 @@
                     </div>
                 </div>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203473.png);"></div>
                         </div>
@@ -356,7 +283,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203482.png);"></div>
                         </div>
@@ -370,7 +297,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203476.png);"></div>
                         </div>
@@ -388,7 +315,7 @@
         <table class="mdl-data-table mdl-js-data-table home-players">
             <tbody>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203481.png);"></div>
                         </div>
@@ -402,7 +329,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203475.png);"></div>
                         </div>
@@ -416,7 +343,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203477.png);"></div>
                         </div>
@@ -430,7 +357,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203481.png);"></div>
                         </div>
@@ -444,7 +371,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203475.png);"></div>
                         </div>
@@ -484,7 +411,7 @@
         <table class="mdl-data-table mdl-js-data-table visitor-players">
             <tbody>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203482.png);"></div>
                         </div>
@@ -498,7 +425,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203476.png);"></div>
                         </div>
@@ -512,7 +439,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203473.png);"></div>
                         </div>
@@ -526,7 +453,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203482.png);"></div>
                         </div>
@@ -540,7 +467,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203476.png);"></div>
                         </div>
@@ -554,7 +481,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203476.png);"></div>
                         </div>
@@ -572,7 +499,7 @@
         <table class="mdl-data-table mdl-js-data-table home-players">
             <tbody>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203481.png);"></div>
                         </div>
@@ -586,7 +513,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203475.png);"></div>
                         </div>
@@ -600,7 +527,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203477.png);"></div>
                         </div>
@@ -614,7 +541,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203481.png);"></div>
                         </div>
@@ -628,7 +555,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
+                    <td class="mdl-data-table__cell--non-numeric player-table_cell--player-info">
                         <div class="player-avatar">
                             <div style="background-image: url(https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203475.png);"></div>
                         </div>
@@ -641,16 +568,8 @@
                         <div class="player-points player-points-amber">7</div>
                     </td>
                 </tr>
-                <tr>
-                    <td class="mdl-data-table__cell--non-numeric player-table-info">
-                        <div class="player-avatar">
-                        </div>
-                        <div class="player-name">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="player-points"></div>
-                    </td>
+                <tr class="players-table_row--no-data">
+                    <td class="mdl-data-table__cell--non-numeric" colspan="2"></td>
                 </tr>
             </tbody>
         </table>
